@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Performance Predictor</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            background: rgba(0,0,0,0.6);
+            padding: 50px;
+            border-radius: 15px;
+            width: 800px;
+            max-width: 90%;
+            box-shadow: 0 0 30px rgba(0,255,255,0.3);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+            color: #00e5ff;
+        }
+
+        h2 {
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+
+        .features {
+            text-align: left;
+            margin: 30px 0;
+            line-height: 1.8;
+        }
+
+        .features span {
+            color: #00ffcc;
+            font-weight: bold;
+        }
+
+        .btn {
+            margin-top: 30px;
+            padding: 15px 40px;
+            font-size: 20px;
+            border: none;
+            border-radius: 50px;
+            background: linear-gradient(90deg, #00e5ff, #00ff95);
+            cursor: pointer;
+            color: black;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #00ffcc;
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 14px;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Student Performance Prediction System</h1>
+    <h2>AI-Powered Academic Score Estimator</h2>
+
+    <p>
+        This machine learning application predicts a student's future performance based on
+        socio-academic parameters using a trained regression model.
+    </p>
+
+    <div class="features">
+        <p>📌 Input Features:</p>
+        <ul>
+            <li><span>Gender</span></li>
+            <li><span>Parental Education Level</span></li>
+            <li><span>Lunch Type</span></li>
+            <li><span>Test Preparation Status</span></li>
+            <li><span>Reading Score</span></li>
+            <li><span>Writing Score</span></li>
+        </ul>
+
+        <p>⚙️ Model Pipeline:</p>
+        <ul>
+            <li>Data Preprocessing with Scikit-Learn Pipelines</li>
+            <li>Trained Regression Model</li>
+            <li>Pickle-based Model & Preprocessor Loading</li>
+            <li>Flask Web Interface for Real-Time Prediction</li>
+        </ul>
+    </div>
+
+    <form action="/predictdata">
+        <button class="btn">🚀 Predict Student Score</button>
+    </form>
+
+    <div class="footer">
+        Built by Ganeev | AI • ML • Full Stack • MLOps Ready
+    </div>
+</div>
+
+</body>
+</html>
